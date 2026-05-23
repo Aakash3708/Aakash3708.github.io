@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aakash Yadav — Analytics & Automation Systems Engineer. Building scalable analytics, workflow automation, and operational intelligence systems using Python, SQL, and internal tooling." />
+  <meta name="keywords" content="Aakash Yadav, Data Analyst, Analytics Engineer, Automation Engineer, Business Intelligence, Python, SQL, Power BI, Delhi, DTU" />
+  <meta name="author" content="Aakash Yadav" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aakash3708.github.io" />
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aakash3708.github.io" />
+  <meta property="og:title" content="Aakash Yadav — Analytics & Automation Systems Engineer" />
+  <meta property="og:description" content="Building scalable analytics & automation systems. Workflow automation, operational intelligence, and BI infrastructure." />
+  <meta property="og:site_name" content="Aakash Yadav Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aakash Yadav — Analytics & Automation Systems Engineer" />
+  <meta name="twitter:description" content="Building scalable analytics & automation systems using Python, SQL, and operational tooling." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aakash Yadav",
+    "jobTitle": "Analytics & Automation Systems Engineer",
+    "email": "aakashyadavdtu@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" },
+    "sameAs": [
+      "https://www.linkedin.com/in/aakashyadavdtu",
+      "https://github.com/Aakash3708",
+      "https://leetcode.com/aakashyadavdtu"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Delhi Technological University"
+    }
+  }
+  </script>
+
+  <title>Aakash Yadav — Analytics & Automation Systems Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== SCROLL PROGRESS ===================== -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Primary navigation">
+    <div class="nav-inner">
+
+      <a href="#home" class="nav-logo" aria-label="Aakash Yadav – back to top">
+        <span class="logo-mark" aria-hidden="true">AY</span>
+        <span class="logo-blink" aria-hidden="true"></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home"         class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="#capabilities" class="nav-link" data-nav="capabilities">Capabilities</a></li>
+        <li><a href="#experience"   class="nav-link" data-nav="experience">Experience</a></li>
+        <li><a href="#projects"     class="nav-link" data-nav="projects">Projects</a></li>
+        <li><a href="#contact"      class="nav-link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Aakash3708" target="_blank" rel="noopener noreferrer" class="nav-icon-btn" aria-label="View GitHub profile">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aakashyadavdtu" target="_blank" rel="noopener noreferrer" class="nav-icon-btn" aria-label="View LinkedIn profile">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:aakashyadavdtu@gmail.com" class="nav-cta">
+          <span>Hire Me</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu" type="button">
+        <span class="ham-bar"></span>
+        <span class="ham-bar"></span>
+        <span class="ham-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <ul class="mobile-nav-list" role="list">
+        <li><a href="#home"         class="mobile-nav-link">Home</a></li>
+        <li><a href="#capabilities" class="mobile-nav-link">Capabilities</a></li>
+        <li><a href="#experience"   class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects"     class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact"      class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-socials">
+        <a href="https://www.linkedin.com/in/aakashyadavdtu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/Aakash3708"               target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://leetcode.com/aakashyadavdtu"         target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fas fa-code" aria-hidden="true"></i></a>
+        <a href="mailto:aakashyadavdtu@gmail.com"             aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <div class="hero-container">
+
+        <!-- LEFT: Identity -->
+        <div class="hero-left">
+          <div class="hero-eyebrow" aria-label="Role category">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span class="mono">ANALYTICS &amp; AUTOMATION SYSTEMS ENGINEER</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Building scalable analytics &amp; automation systems.
+          </h1>
+
+          <p class="hero-sub">
+            Systems-oriented analyst focused on workflow automation, operational intelligence, and scalable reporting infrastructure using Python, SQL, spreadsheets, and lightweight internal tooling.
+          </p>
+
+          <div class="hero-meta-row" aria-label="Status and location">
+            <div class="hero-meta-item">
+              <i class="fas fa-location-dot" aria-hidden="true"></i>
+              <span class="mono">Delhi, India</span>
+            </div>
+            <div class="hero-meta-item hero-status">
+              <span class="pulse-ring" aria-hidden="true"></span>
+              <span class="mono">Available for Opportunities</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Systems</span>
+              <i class="fas fa-arrow-down" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <span>Get In Touch</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="External profile links">
+            <a href="https://www.linkedin.com/in/aakashyadavdtu" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn profile">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Aakash3708" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub profile">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://leetcode.com/aakashyadavdtu" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LeetCode profile">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <span>LeetCode</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Operational Intelligence Simulator -->
+        <div class="hero-right" aria-label="Operational intelligence system visualization">
+          <div class="sim-shell">
+            <div class="sim-topbar">
+              <div class="sim-topbar-left">
+                <span class="sim-dot sim-dot-red"   aria-hidden="true"></span>
+                <span class="sim-dot sim-dot-amber" aria-hidden="true"></span>
+                <span class="sim-dot sim-dot-green" aria-hidden="true"></span>
+              </div>
+              <span class="mono sim-title-label">OPERATIONAL INTELLIGENCE MONITOR</span>
+              <div class="sim-live-badge" aria-live="polite">
+                <span class="sim-live-dot" id="simLiveDot" aria-hidden="true"></span>
+                <span class="mono" id="simLiveLabel">LIVE</span>
+              </div>
+            </div>
+
+            <div class="sim-kpi-strip" role="region" aria-label="Live KPI metrics">
+              <div class="sim-kpi-item">
+                <span class="mono sim-kpi-label">THROUGHPUT</span>
+                <span class="sim-kpi-value" id="kpiThroughput">98.4%</span>
+              </div>
+              <div class="sim-kpi-sep" aria-hidden="true"></div>
+              <div class="sim-kpi-item">
+                <span class="mono sim-kpi-label">PIPELINE</span>
+                <span class="sim-kpi-value sim-kpi-cyan" id="kpiPipeline">ACTIVE</span>
+              </div>
+              <div class="sim-kpi-sep" aria-hidden="true"></div>
+              <div class="sim-kpi-item">
+                <span class="mono sim-kpi-label">ACCURACY</span>
+                <span class="sim-kpi-value sim-kpi-green" id="kpiAccuracy">99.2%</span>
+              </div>
+            </div>
+
+            <canvas id="simCanvas" class="sim-canvas" aria-hidden="true"></canvas>
+
+            <div class="sim-log" role="log" aria-live="polite" aria-label="System event log">
+              <div class="sim-log-header">
+                <i class="fas fa-terminal" aria-hidden="true"></i>
+                <span class="mono">SYSTEM LOG</span>
+              </div>
+              <div class="sim-log-body" id="simLogBody">
+                <!-- JS-populated -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="mono">SCROLL</span>
+        <div class="scroll-line-anim"></div>
+      </div>
+    </section>
+
+    <!-- ===================== OPERATIONAL METRICS ===================== -->
+    <section class="metrics-section" id="metrics" aria-labelledby="metrics-heading">
+      <div class="metrics-inner">
+        <div class="metrics-label-row">
+          <span class="mono section-eyebrow">OPERATIONAL TELEMETRY</span>
+        </div>
+        <div class="metrics-grid" role="list">
+
+          <div class="metric-card reveal-up" role="listitem">
+            <div class="metric-num-row">
+              <span class="metric-num" id="cnt0">0</span>
+              <span class="metric-unit">%</span>
+            </div>
+            <div class="metric-title mono">Reduction in Manual Reporting Effort</div>
+            <div class="metric-detail">via Python automation &amp; Excel Macros at 1 Orbit</div>
+          </div>
+
+          <div class="metric-card reveal-up" role="listitem" style="--delay: 0.1s">
+            <div class="metric-num-row">
+              <span class="metric-num" id="cnt1">0</span>
+              <span class="metric-unit">+ hrs</span>
+            </div>
+            <div class="metric-title mono">Saved Every Month</div>
+            <div class="metric-detail">through recurring workflow automation systems</div>
+          </div>
+
+          <div class="metric-card reveal-up" role="listitem" style="--delay: 0.2s">
+            <div class="metric-num-row">
+              <span class="metric-num" id="cnt2">0</span>
+              <span class="metric-unit">K+</span>
+            </div>
+            <div class="metric-title mono">Entities Processed &amp; Analyzed</div>
+            <div class="metric-detail">structured research &amp; reporting pipelines at Collegedunia</div>
+          </div>
+
+          <div class="metric-card reveal-up" role="listitem" style="--delay: 0.3s">
+            <div class="metric-num-row">
+              <span class="metric-num" id="cnt3">0</span>
+              <span class="metric-unit">%</span>
+            </div>
+            <div class="metric-title mono">Reduction in Manual Document Entry</div>
+            <div class="metric-detail">via OCR document automation pipeline</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CAPABILITIES ===================== -->
+    <section class="capabilities-section" id="capabilities" aria-labelledby="cap-heading">
+      <div class="section-wrap">
+        <header class="section-header reveal-up">
+          <span class="mono section-eyebrow">SYSTEMS CAPABILITIES</span>
+          <h2 class="section-title" id="cap-heading">What I Build &amp; Engineer</h2>
+          <p class="section-sub">Categorized operational domains and tooling ecosystems — not generic skill bars.</p>
+        </header>
+
+        <div class="cap-grid">
+
+          <article class="cap-card reveal-up" aria-labelledby="cap1-title">
+            <div class="cap-card-top">
+              <div class="cap-icon-wrap" aria-hidden="true">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="cap-title" id="cap1-title">Analytics Engineering</h3>
+            </div>
+            <p class="cap-desc">Building KPI systems, reporting pipelines, and BI infrastructure — from raw data to structured, decision-ready insight.</p>
+            <ul class="cap-pills" role="list" aria-label="Analytics capabilities">
+              <li>KPI Dashboard Systems</li>
+              <li>Reporting Pipelines</li>
+              <li>BI Infrastructure</li>
+              <li>Operational Analytics</li>
+              <li>Root-Cause Analysis</li>
+              <li>Performance Monitoring</li>
+            </ul>
+            <div class="cap-stack-row">
+              <span class="mono cap-stack-label">STACK</span>
+              <span class="cap-stack-value">SQL · Python · Power BI · Looker Studio</span>
+            </div>
+          </article>
+
+          <article class="cap-card reveal-up" style="--delay: 0.1s" aria-labelledby="cap2-title">
+            <div class="cap-card-top">
+              <div class="cap-icon-wrap cap-icon-amber" aria-hidden="true">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3 class="cap-title" id="cap2-title">Automation &amp; Scripting</h3>
+            </div>
+            <p class="cap-desc">Eliminating manual operational overhead through workflow scripting, OCR document pipelines, and reporting automation.</p>
+            <ul class="cap-pills" role="list" aria-label="Automation capabilities">
+              <li>Workflow Orchestration</li>
+              <li>OCR Pipelines</li>
+              <li>Reporting Automation</li>
+              <li>Spreadsheet Automation</li>
+              <li>Apps Script Systems</li>
+              <li>Macro Engineering</li>
+            </ul>
+            <div class="cap-stack-row">
+              <span class="mono cap-stack-label">STACK</span>
+              <span class="cap-stack-value">Python · Apps Script · Excel Macros · Tesseract</span>
+            </div>
+          </article>
+
+          <article class="cap-card reveal-up" style="--delay: 0.2s" aria-labelledby="cap3-title">
+            <div class="cap-card-top">
+              <div class="cap-icon-wrap cap-icon-violet" aria-hidden="true">
+                <i class="fas fa-table-cells-large"></i>
+              </div>
+              <h3 class="cap-title" id="cap3-title">Spreadsheet Engineering</h3>
+            </div>
+            <p class="cap-desc">Architecting complex formula systems, dynamic array logic, and cross-sheet data validation at operational scale.</p>
+            <ul class="cap-pills" role="list" aria-label="Spreadsheet engineering capabilities">
+              <li>Dynamic Array Logic</li>
+              <li>Data Validation Systems</li>
+              <li>Cross-Sheet Integration</li>
+              <li>Conditional Logic</li>
+              <li>Reporting Templates</li>
+              <li>Dashboard Architecture</li>
+            </ul>
+            <div class="cap-stack-row">
+              <span class="mono cap-stack-label">STACK</span>
+              <span class="cap-stack-value">Excel (Advanced) · Google Sheets · PivotTables</span>
+            </div>
+          </article>
+
+          <article class="cap-card reveal-up" style="--delay: 0.3s" aria-labelledby="cap4-title">
+            <div class="cap-card-top">
+              <div class="cap-icon-wrap cap-icon-emerald" aria-hidden="true">
+                <i class="fas fa-gears"></i>
+              </div>
+              <h3 class="cap-title" id="cap4-title">Operations &amp; Process</h3>
+            </div>
+            <p class="cap-desc">Designing scalable operational workflows, validation systems, and process optimization frameworks for business reliability.</p>
+            <ul class="cap-pills" role="list" aria-label="Operations capabilities">
+              <li>Process Optimization</li>
+              <li>Workflow Design</li>
+              <li>Data Quality Systems</li>
+              <li>Operational Monitoring</li>
+              <li>Structured Reporting</li>
+              <li>Stakeholder Systems</li>
+            </ul>
+            <div class="cap-stack-row">
+              <span class="mono cap-stack-label">STACK</span>
+              <span class="cap-stack-value">SQL · Python (Pandas, NumPy) · Excel</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Full tooling ecosystem -->
+        <div class="tooling-row reveal-up" aria-labelledby="tooling-heading">
+          <span class="mono section-eyebrow" id="tooling-heading">FULL TOOLING ECOSYSTEM</span>
+          <div class="tool-pills" role="list">
+            <span class="tool-pill" role="listitem">SQL</span>
+            <span class="tool-pill" role="listitem">Python</span>
+            <span class="tool-pill" role="listitem">Pandas</span>
+            <span class="tool-pill" role="listitem">NumPy</span>
+            <span class="tool-pill" role="listitem">Excel (Advanced)</span>
+            <span class="tool-pill" role="listitem">Google Sheets</span>
+            <span class="tool-pill" role="listitem">Power BI</span>
+            <span class="tool-pill" role="listitem">Looker Studio</span>
+            <span class="tool-pill" role="listitem">Apps Script</span>
+            <span class="tool-pill" role="listitem">Excel Macros</span>
+            <span class="tool-pill" role="listitem">Tesseract OCR</span>
+            <span class="tool-pill" role="listitem">Matplotlib</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="experience-section" id="experience" aria-labelledby="exp-heading">
+      <div class="section-wrap">
+        <header class="section-header reveal-up">
+          <span class="mono section-eyebrow">WORK HISTORY</span>
+          <h2 class="section-title" id="exp-heading">Experience</h2>
+          <p class="section-sub">Building operational systems and analytics infrastructure across growth-stage companies.</p>
+        </header>
+
+        <div class="timeline" role="list">
+
+          <!-- Role 1: Data Analyst @ 1 Orbit -->
+          <div class="tl-item reveal-up" role="listitem">
+            <div class="tl-marker" aria-hidden="true">
+              <div class="tl-dot tl-dot-active"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-header">
+                <div class="tl-title-block">
+                  <h3 class="tl-role">Data Analyst</h3>
+                  <span class="tl-company">1 Orbit <span class="tl-company-sub">(formerly Mobisaturn)</span></span>
+                </div>
+                <div class="tl-meta-block">
+                  <span class="mono tl-period">OCT 2025 – PRESENT</span>
+                  <span class="mono tl-location">Gurugram, India</span>
+                  <span class="tl-badge tl-badge-active">Current</span>
+                </div>
+              </div>
+              <ul class="tl-bullets" role="list">
+                <li>Built automated KPI dashboards using SQL, Python (Pandas), and Excel providing real-time visibility into revenue, conversion, and operational performance metrics.</li>
+                <li>Developed recurring reporting workflows using Python scripts and Excel Macros, <strong>reducing manual effort by 80%</strong> and saving <strong>30+ hours/month</strong>.</li>
+                <li>Performed root-cause analysis on metric fluctuations and operational anomalies to support timely corrective actions by business leads.</li>
+                <li>Analyzed campaign and operational datasets to identify performance drivers and optimization opportunities across business verticals.</li>
+                <li>Collaborated cross-functionally to translate ambiguous business requirements into scalable analytical systems and reporting workflows.</li>
+              </ul>
+              <div class="tl-stack-row" aria-label="Technologies used">
+                <span class="mono tl-stack-label">STACK</span>
+                <span class="tl-tag">SQL</span>
+                <span class="tl-tag">Python</span>
+                <span class="tl-tag">Pandas</span>
+                <span class="tl-tag">Excel</span>
+                <span class="tl-tag">Excel Macros</span>
+                <span class="tl-tag">KPI Dashboards</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Management Trainee @ 1 Orbit -->
+          <div class="tl-item reveal-up" role="listitem">
+            <div class="tl-marker" aria-hidden="true">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-header">
+                <div class="tl-title-block">
+                  <h3 class="tl-role">Management Trainee</h3>
+                  <span class="tl-company">1 Orbit <span class="tl-company-sub">(formerly Mobisaturn)</span></span>
+                </div>
+                <div class="tl-meta-block">
+                  <span class="mono tl-period">APR 2025 – OCT 2025</span>
+                  <span class="mono tl-location">Gurugram, India</span>
+                </div>
+              </div>
+              <ul class="tl-bullets" role="list">
+                <li>Designed performance tracking dashboards in Excel and Google Sheets for daily, weekly, and monthly business reporting cycles.</li>
+                <li>Improved data validation reliability for executive-level reporting systems, ensuring accuracy in decision-critical performance summaries.</li>
+                <li>Standardized repetitive reporting workflows and identified operational bottlenecks across business reporting pipelines.</li>
+                <li>Built automation-assisted reporting structures to reduce manual dependencies and improve operational consistency.</li>
+              </ul>
+              <div class="tl-stack-row" aria-label="Technologies used">
+                <span class="mono tl-stack-label">STACK</span>
+                <span class="tl-tag">Excel</span>
+                <span class="tl-tag">Google Sheets</span>
+                <span class="tl-tag">Data Validation</span>
+                <span class="tl-tag">Reporting Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3: Data Researcher @ Collegedunia -->
+          <div class="tl-item tl-item-last reveal-up" role="listitem">
+            <div class="tl-marker" aria-hidden="true">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-header">
+                <div class="tl-title-block">
+                  <h3 class="tl-role">Data Researcher</h3>
+                  <span class="tl-company">Collegedunia</span>
+                </div>
+                <div class="tl-meta-block">
+                  <span class="mono tl-period">NOV 2024 – APR 2025</span>
+                  <span class="mono tl-location">Gurugram, India</span>
+                </div>
+              </div>
+              <ul class="tl-bullets" role="list">
+                <li>Processed and analyzed datasets covering <strong>25,000+ entities</strong> for structured research and reporting deliverables across business verticals.</li>
+                <li>Built monitoring workflows to improve data consistency and reduce turnaround time across internal data platforms.</li>
+                <li>Improved data quality through structured validation processes and root-cause investigation of data gaps.</li>
+                <li>Supported operational reporting and research intelligence pipelines across multiple internal stakeholder teams.</li>
+              </ul>
+              <div class="tl-stack-row" aria-label="Technologies used">
+                <span class="mono tl-stack-label">STACK</span>
+                <span class="tl-tag">SQL</span>
+                <span class="tl-tag">Python</span>
+                <span class="tl-tag">Data Validation</span>
+                <span class="tl-tag">Research Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects-section" id="projects" aria-labelledby="proj-heading">
+      <div class="section-wrap">
+        <header class="section-header reveal-up">
+          <span class="mono section-eyebrow">SYSTEMS BUILT</span>
+          <h2 class="section-title" id="proj-heading">Featured Projects</h2>
+          <p class="section-sub">Operational systems and engineering case studies — built to solve real workflow problems at scale.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Mental Health Insights Dashboard -->
+          <article class="proj-card reveal-up" aria-labelledby="p1-title">
+            <div class="proj-card-header">
+              <span class="mono proj-num" aria-hidden="true">01</span>
+              <span class="proj-type-badge">
+                <span class="proj-type-dot" aria-hidden="true"></span>
+                <span class="mono">ANALYTICAL SYSTEM</span>
+              </span>
+            </div>
+
+            <h3 class="proj-title" id="p1-title">Mental Health Insights Dashboard</h3>
+
+            <div class="proj-case-grid">
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">PROBLEM</span>
+                <p class="proj-case-text">Large survey datasets contained behavioral patterns that were difficult to interpret manually — no structured visual layer existed for insight extraction across demographic variables.</p>
+              </div>
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">SYSTEM BUILT</span>
+                <p class="proj-case-text">End-to-end analytical dashboard and visualization pipeline for structured insight extraction from 1,200+ survey responses with demographic trend mapping.</p>
+              </div>
+            </div>
+
+            <div class="proj-stack-row">
+              <span class="mono proj-stack-label">STACK</span>
+              <div class="proj-tag-wrap">
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">NumPy</span>
+                <span class="proj-tag">Matplotlib</span>
+                <span class="proj-tag">SQL</span>
+                <span class="proj-tag">Excel</span>
+                <span class="proj-tag">PivotTables</span>
+              </div>
+            </div>
+
+            <div class="proj-impact-row" aria-label="Impact metrics">
+              <div class="proj-impact-item">
+                <span class="proj-impact-val">1,200+</span>
+                <span class="mono proj-impact-label">Survey Responses Analyzed</span>
+              </div>
+              <div class="proj-impact-item">
+                <span class="proj-impact-val">Multi-dim</span>
+                <span class="mono proj-impact-label">Demographic Trends Mapped</span>
+              </div>
+            </div>
+
+            <div class="proj-highlights">
+              <span class="mono proj-hl-label">ENGINEERING HIGHLIGHTS</span>
+              <ul role="list">
+                <li>Built interactive visual reporting structures with PivotTables, Matplotlib charts, and structured Excel dashboards</li>
+                <li>Identified demographic and behavioral trends across multi-variable survey data through statistical analysis</li>
+                <li>Delivered data-backed recommendations through structured dashboard visualizations for stakeholder interpretation</li>
+              </ul>
+            </div>
+
+            <div class="proj-footer">
+              <a href="https://github.com/Aakash3708" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Mental Health Insights Dashboard on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: DawnQueue -->
+          <article class="proj-card proj-card-violet proj-card-full reveal-up" style="--delay: 0.25s" aria-labelledby="p3-title">
+            <div class="proj-card-header">
+              <span class="mono proj-num" aria-hidden="true">03</span>
+              <span class="proj-type-badge proj-type-badge-violet">
+                <span class="proj-type-dot" aria-hidden="true"></span>
+                <span class="mono">INTERNAL ENGINEERING TOOL</span>
+              </span>
+            </div>
+
+            <h3 class="proj-title" id="p3-title">DawnQueue — Production Gmail Outbound Queue</h3>
+
+            <div class="proj-case-grid proj-case-grid-3">
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">PROBLEM</span>
+                <p class="proj-case-text">Professional email sent at random times in uncontrolled bursts — no scheduling discipline, no spacing enforcement, no retry safety for failed sends, and zero operational visibility.</p>
+              </div>
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">SYSTEM BUILT</span>
+                <p class="proj-case-text">Production Gmail outbound queue built on Google Apps Script, Sheets, and Drive. Stages drafts under a <code>HOLD</code> label and releases them on a fully deterministic schedule — business hours, send spacing, daily caps, and exponential backoff retry.</p>
+              </div>
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">ARCHITECTURE</span>
+                <p class="proj-case-text">13 modular source files across 4 pipeline stages: Ingest → Schedule → Send → Retry. Each stage is independently lockable, observable, and failure-safe. Idempotent sends via per-row send tokens prevent duplicate delivery.</p>
+              </div>
+            </div>
+
+            <div class="proj-stack-row">
+              <span class="mono proj-stack-label">STACK</span>
+              <div class="proj-tag-wrap">
+                <span class="proj-tag">Google Apps Script</span>
+                <span class="proj-tag">Google Sheets</span>
+                <span class="proj-tag">Google Drive</span>
+                <span class="proj-tag">Gmail API</span>
+                <span class="proj-tag">LockService</span>
+                <span class="proj-tag">Script Properties</span>
+              </div>
+            </div>
+
+            <div class="proj-impact-row proj-impact-row-4">
+              <div class="proj-impact-item">
+                <span class="proj-impact-val proj-impact-violet">09:45–18:00</span>
+                <span class="mono proj-impact-label">Business Hours Enforcement (IST, Mon–Fri)</span>
+              </div>
+              <div class="proj-impact-item">
+                <span class="proj-impact-val proj-impact-violet">200/day</span>
+                <span class="mono proj-impact-label">Daily Send Cap with Per-Run Limits</span>
+              </div>
+              <div class="proj-impact-item">
+                <span class="proj-impact-val proj-impact-violet">3-tier</span>
+                <span class="mono proj-impact-label">Exponential Backoff Retry (15→30→60 min)</span>
+              </div>
+              <div class="proj-impact-item">
+                <span class="proj-impact-val proj-impact-violet">13</span>
+                <span class="mono proj-impact-label">Modular Source Files — Zero Monoliths</span>
+              </div>
+            </div>
+
+            <div class="proj-highlights">
+              <span class="mono proj-hl-label">ENGINEERING HIGHLIGHTS</span>
+              <ul role="list">
+                <li>Deterministic scheduling — <code>scheduledSendAt</code> is immutable once written; no queue reshuffling, no drift across trigger runs</li>
+                <li>LockService concurrency guards prevent duplicate sends and schedule corruption across overlapping trigger executions</li>
+                <li>5m 30s execution safety cutoff with cursor-based ingest resumption — survives Apps Script's 6-minute hard limit cleanly</li>
+                <li>Immutable snapshot architecture — recipients, subject, HTML body, and attachments frozen to Drive at ingest time; live draft edits cannot corrupt queued sends</li>
+                <li>Structured Logs sheet with component, event code, and PII-redacted JSON context — full operational visibility without external tooling</li>
+              </ul>
+            </div>
+
+            <div class="proj-footer">
+              <a href="https://github.com/Aakash3708/DawnQueue" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View DawnQueue on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>github.com/Aakash3708/DawnQueue</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: OCR Document Automation -->
+          <article class="proj-card proj-card-accent reveal-up" style="--delay: 0.15s" aria-labelledby="p2-title">
+            <div class="proj-card-header">
+              <span class="mono proj-num" aria-hidden="true">02</span>
+              <span class="proj-type-badge proj-type-badge-amber">
+                <span class="proj-type-dot" aria-hidden="true"></span>
+                <span class="mono">AUTOMATION PIPELINE</span>
+              </span>
+            </div>
+
+            <h3 class="proj-title" id="p2-title">OCR-based Document Automation</h3>
+
+            <div class="proj-case-grid">
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">PROBLEM</span>
+                <p class="proj-case-text">Manual extraction of data from scanned documents was repetitive, error-prone, and creating an operational bottleneck in document-heavy business workflows.</p>
+              </div>
+              <div class="proj-case-block">
+                <span class="mono proj-case-label">SYSTEM BUILT</span>
+                <p class="proj-case-text">End-to-end OCR-driven document processing pipeline with automated Excel reporting workflows and structured extraction — eliminating manual entry entirely.</p>
+              </div>
+            </div>
+
+            <div class="proj-stack-row">
+              <span class="mono proj-stack-label">STACK</span>
+              <div class="proj-tag-wrap">
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">Tesseract OCR</span>
+                <span class="proj-tag">Pytesseract</span>
+                <span class="proj-tag">Excel Automation</span>
+                <span class="proj-tag">Reporting Pipelines</span>
+              </div>
+            </div>
+
+            <div class="proj-impact-row" aria-label="Impact metrics">
+              <div class="proj-impact-item">
+                <span class="proj-impact-val proj-impact-amber">85%</span>
+                <span class="mono proj-impact-label">Reduction in Manual Data Entry</span>
+              </div>
+              <div class="proj-impact-item">
+                <span class="proj-impact-val proj-impact-amber">End-to-End</span>
+                <span class="mono proj-impact-label">Automated Report Generation</span>
+              </div>
+            </div>
+
+            <div class="proj-highlights">
+              <span class="mono proj-hl-label">ENGINEERING HIGHLIGHTS</span>
+              <ul role="list">
+                <li>Automated structured data extraction from scanned documents — eliminated all manual transcription work</li>
+                <li>Built scalable report generation in Excel removing human error from document-heavy business processes</li>
+                <li>Reduced repetitive report preparation workflows through full pipeline automation end-to-end</li>
+              </ul>
+            </div>
+
+            <div class="proj-footer">
+              <a href="https://github.com/Aakash3708" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View OCR Document Automation on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="edu-section" id="education" aria-labelledby="edu-heading">
+      <div class="section-wrap">
+        <header class="section-header reveal-up">
+          <span class="mono section-eyebrow">ACADEMIC FOUNDATION</span>
+          <h2 class="section-title" id="edu-heading">Education</h2>
+        </header>
+
+        <div class="edu-card reveal-up" role="article">
+          <div class="edu-icon-col" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-degree-row">
+              <h3 class="edu-degree">B.Tech in Mathematics &amp; Computing</h3>
+              <span class="mono edu-cgpa">CGPA: 7.80</span>
+            </div>
+            <span class="edu-institution">Delhi Technological University</span>
+            <div class="edu-meta-row">
+              <span class="mono edu-period">2020 – 2024</span>
+              <span class="edu-location">Delhi, India</span>
+            </div>
+            <p class="edu-note">
+              Quantitative foundation in mathematics, computing systems, and algorithmic thinking — directly underpinning analytical engineering, automation system design, and data pipeline architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-wrap">
+        <div class="contact-inner reveal-up">
+          <span class="mono section-eyebrow">OPEN TO OPPORTUNITIES</span>
+          <h2 class="contact-title" id="contact-heading">Let's Build Something Together.</h2>
+          <p class="contact-sub">
+            Actively looking for roles in Analytics Engineering, Automation, Business Intelligence, and Ops systems. If you're building something that needs scalable reporting infrastructure or workflow automation — let's talk.
+          </p>
+          <div class="contact-cta-row">
+            <a href="mailto:aakashyadavdtu@gmail.com" class="btn btn-primary btn-lg">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>aakashyadavdtu@gmail.com</span>
+            </a>
+          </div>
+          <div class="contact-socials-row" aria-label="External profile links">
+            <a href="https://www.linkedin.com/in/aakashyadavdtu" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Aakash3708" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://leetcode.com/aakashyadavdtu" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="LeetCode">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <span>LeetCode</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo-mark">AY</span>
+        <div class="footer-id">
+          <span class="footer-name">Aakash Yadav</span>
+          <span class="mono footer-role">Analytics &amp; Automation Systems Engineer</span>
+        </div>
+      </div>
+      <div class="footer-center mono">
+        Built with HTML · CSS · JavaScript
+      </div>
+      <div class="footer-right mono">
+        Delhi, India &middot; <span id="footerYear"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
